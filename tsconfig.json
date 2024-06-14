@@ -2,7 +2,8 @@
   "extends": "ts-config-single-spa",
   "files": ["src/shoppe-root-config.ts"],
   "compilerOptions": {
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "target": "ES2015"
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]

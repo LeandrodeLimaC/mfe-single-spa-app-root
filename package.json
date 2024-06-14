@@ -9,7 +9,9 @@
     "check-format": "prettier --check .",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
-    "build:types": "tsc"
+    "build:types": "tsc",
+    "deploy": "sh deploy.sh",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -17,6 +19,11 @@
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/runtime": "^7.15.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.6",
+    "@semantic-release/release-notes-generator": "^14.0.0",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
@@ -28,6 +35,7 @@
     "jest-cli": "^27.0.6",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
+    "semantic-release": "^24.0.0",
     "serve": "^12.0.0",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
